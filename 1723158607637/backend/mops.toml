@@ -1,0 +1,3 @@
+[dependencies]
+base = "https://github.com/dfinity/motoko-base#misc-patch@28a673dec0c3a65611be5ecda3617fa3ec0ef0ae"
+prng = "0.0.5"

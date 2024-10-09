@@ -1,0 +1,13 @@
+// Version: 1.0.0
+type Direction = {#Down; #Left; #Right; #Up};
+type Position = {x : Int; y : Int};
+actor {
+  stable var stableGameState :
+    {
+      direction : Direction;
+      food : Position;
+      gameOver : Bool;
+      score : Nat;
+      snake : [Position]
+    }
+};

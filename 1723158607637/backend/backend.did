@@ -1,0 +1,25 @@
+type Position = 
+ record {
+   x: int;
+   y: int;
+ };
+type GameState = 
+ record {
+   direction: Direction;
+   food: Position;
+   gameOver: bool;
+   score: nat;
+   snake: vec Position;
+ };
+type Direction = 
+ variant {
+   Down;
+   Left;
+   Right;
+   Up;
+ };
+service : {
+  getGameState: () -> (GameState) query;
+  moveSnake: (Direction) -> (GameState);
+  startNewGame: () -> (GameState);
+}
